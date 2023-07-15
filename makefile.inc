@@ -446,6 +446,8 @@ image_jtag_1M:
 		-c "dump_image image.bin 0x08000000 1048576" \
 		$(POSTLUDE)
 
+build_combo: $(COMBO_BIN)
+
 debug_server: $(TARGET_BIN)
 	$(OPENOCD_BIN_PATH)openocd \
 		-s $(OPENOCD_SCRIPT_PATH) \
