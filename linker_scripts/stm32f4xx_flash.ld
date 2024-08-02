@@ -4,7 +4,7 @@ Default linker script for STM32F4xx_1024K_192K
 
 ENTRY(Reset_Handler)
 
-_estack = 0x20020000;
+_estack = 0x20008000;
 
 _Min_Heap_Size = 0;
 _Min_Stack_Size = 0x400;
